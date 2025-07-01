@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Your Doctor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Doctor Appointment Booking</h1>
+
+    <!-- Step 1: Department and Doctor List -->
+    <div id="doctor-selection">
+      <h3>Select a Department</h3>
+      <select id="doctorList" onchange="showForm()">
+        <option value="">-- Select a Doctor --</option>
+        <!-- Options added via script.js -->
+      </select>
+    </div>
+
+    <!-- Step 2: Patient Details Form -->
+    <div id="patientForm" style="display: none;">
+      <h3>Patient Information</h3>
+      <input type="text" id="patientName" placeholder="Patient Name" required />
+      <input type="number" id="age" placeholder="Age" required />
+      <input type="text" id="phone" placeholder="Phone Number" required />
+      <input type="text" id="address" placeholder="Address" />
+      <input type="text" id="reason" placeholder="Reason for Visit" />
+      <button onclick="submitAppointment()">Book Appointment</button>
+    </div>
+
+    <!-- Step 3: Confirmation -->
+    <div id="confirmation" style="display: none;">
+      <h3>✅ Appointment Confirmed</h3>
+      <p><strong>Reference ID:</strong> <span id="refId"></span></p>
+      <p><strong>Patient:</strong> <span id="confName"></span></p>
+      <p><strong>Doctor:</strong> <span id="confDoctor"></span></p>
+      <p><strong>Department:</strong> <span id="confDept"></span></p>
+      <p><strong>Time Slot:</strong> <span id="confTime"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
