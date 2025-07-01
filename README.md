@@ -1,1 +1,3 @@
 # Doctor-Appointment-Booking-System
+
+A full-stack web application built using Java Spring Boot (REST APIs) and a responsive HTML/CSS/JavaScript frontend to streamline doctor-patient appointments. The system displays a categorized list of doctors by department and time slots, enables patients to select a doctor, fill out appointment details, and receive a confirmation with a unique reference ID. Emphasized clean architecture, modular backend design, and professional, mobile-responsive UI. Demonstrates practical implementation of RESTful APIs, client-server interaction, and dynamic frontend rendering, ideal for showcasing full-stack development skills in healthcare domain solutions.
